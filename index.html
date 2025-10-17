@@ -8,20 +8,30 @@
 </head>
 <body>
     <div class="container mt-5">
+        <h1 class="mb-4">Sales Dashboard</h1>
         <div class="card text-center">
             <div class="card-header">
-                <h1>Sales Data Summary</h1>
+                Total Sales
             </div>
             <div class="card-body">
-                <h5 class="card-title">Total Sales</h5>
-                <p class="card-text display-4" id="total-sales">Loading...</p>
-            </div>
-            <div class="card-footer text-muted">
-                Data sourced from data.csv
+                <h5 class="card-title" id="total-sales">$0.00</h5>
             </div>
         </div>
+
+        <h2 class="mt-5">Sales by Product</h2>
+        <table class="table table-striped mt-3" id="product-sales">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Total Sales</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Product sales data will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
